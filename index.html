@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Fortune Teller</h2>
+        <h4>Check all that apply and have your fortune read!</h4>
+      </div>
+      <form id="fortune_teller">
+        <div class="form-group checkbox">
+          <p class="question">How many of the 'unlucky' events below have you experienced recently?</p>
+          <input type="checkbox" name="unlucky" value="crack">Stepped on a crack.<br>
+          <input type="checkbox" name="unlucky" value="black cat">Crossed paths with a black cat.<br>
+          <input type="checkbox" name="unlucky" value="mirror">Broke a mirror.<br>
+          <input type="checkbox" name="unlucky" value="ladder">Ended up under a ladder.<br>
+          <input type="checkbox" name="unlucky" value="umbrella">Opened your umbrella indoors.<br>
+          <input type="checkbox" name="unlucky" value="bed">Getting up on the wrong side of the bed.<br>
+        </div>
+        <div class="form-group checkbox">
+          <p class="question">How many of the 'lucky' events below have you experienced recently?</p>
+          <input type="checkbox" name="lucky" value="clover">Found a four-leaf clover.<br>
+          <input type="checkbox" name="lucky" value="rainbow">Discovered the end of the rainbow.<br>
+          <input type="checkbox" name="lucky" value="penny">Found a penny.<br>
+          <input type="checkbox" name="lucky" value="horseshoe">Hung up a lucky horseshoe.<br>
+          <input type="checkbox" name="lucky" value="mandm">Ate a green M&#38;M.<br>
+          <input type="checkbox" name="lucky" value="ladybug">Had a ladybug land on you.<br>
+        </div>
+        <button type="button" class="btn btn-primary">See your fortune!</button>
+      </form>
+      <!-- <div class="output"> -->
+      <span id="unlucky_response">
+        <p>Based on the bad luck you've encountered lately, it's probably best that you
+          stay indoors, and keep the blankets over your very unlucky head!
+        </p>
+        <p>Here's what's gone wrong lately!</p>
+      </span>
+      <br>
+        <span id="lucky_response">
+          <p>But don't lose hope yet. It looks like you've also had some powerful bouts of
+            good luck as well. Perhaps you shouldn't take my advice at all, and just carry on
+            as usual!
+          </p>
+          <p>Here's what's gone right lately!</p>
+        </span>
+      <!-- </div> -->
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+#unlucky_response {
+  display: none;
+}
+
+#lucky_response {
+  display: none;
+}
+
+
+.jumbotron {
+  background-color: Teal;
+  color: AntiqueWhite;
+  text-align: center;
+}
+
+.question {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.output {
+  padding-top: 20px;
+  font-style: italic;
+}
